@@ -269,6 +269,14 @@ body.no-scroll {
   padding: 0;
 }
 
+.promise-img {
+  width: 220px;       /* Atur lebar yang Anda inginkan (misal: 80px - 140px) */
+  max-width: 100%;
+  height: auto;       /* Menjaga proporsi gambar */
+  margin: 0 auto;
+  display: inline-block;
+}
+
 /* Doodle Overlays */
 .doodle-ring-overlay {
   position: absolute;
