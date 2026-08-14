@@ -238,7 +238,7 @@ body.no-scroll {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  animation: popInHero 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s both;
+  animation: popInHero 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
 }
 
 #cover-section .hero-2 {
@@ -248,7 +248,7 @@ body.no-scroll {
   will-change: transform, opacity;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  animation: popInHero 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s both;
+   animation: popInHero2 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
 }
 
 .cover-top {
@@ -961,9 +961,29 @@ body.no-scroll {
 @keyframes spinDonut { 100% { transform: rotate(360deg); } }
 
 @keyframes popInHero {
-  0% { opacity: 0; transform: scale(0.3) translateY(20px); }
-  70% { opacity: 1; transform: scale(1.08) translateY(-4px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
+  0% {
+    opacity: 0;
+    /* Mulai dari luar layar sebelah kiri dan sedikit lebih kecil */
+    transform: translateX(-100vw) scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    /* Berhenti tepat di posisi asli dengan ukuran normal */
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes popInHero2 {
+  0% {
+    opacity: 0;
+    /* Mulai dari luar layar sebelah kiri dan sedikit lebih kecil */
+    transform: translateX(100vw) scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    /* Berhenti tepat di posisi asli dengan ukuran normal */
+    transform: translateX(0) scale(1);
+  }
 }
 
 @keyframes fadeInRhythm {
