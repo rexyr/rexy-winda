@@ -21,7 +21,67 @@
     <!-- SECTION 1: COVER UNDANGAN (DUAL HERO OBJECTS)  -->
     <!-- ============================================== -->
     <section id="cover-section">
-  
+
+      <svg class="curtain-ornament top" viewBox="0 0 1200 160" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradien Maroon Utama Atas (100% Solid) -->
+    <linearGradient id="topDrapeGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#300006" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#5a0410" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#7a0a1a" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3b0007" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Gradien Maroon Lipatan Lapis Kedua -->
+    <linearGradient id="topDrapeGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#42000a" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#6e0614" stop-opacity="1"/>
+      <stop offset="85%" stop-color="#8c1022" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#240004" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Lapisan Belakang Gelombang Tirai (4 Swags) -->
+  <path d="M0,0 L1200,0 L1200,30 
+           Q1050,150 900,30 
+           Q750,150 600,30 
+           Q450,150 300,30 
+           Q150,150 0,30 Z" 
+        fill="url(#topDrapeGrad1)" 
+        stroke="#240004" 
+        stroke-width="0.75"/>
+
+  <!-- Lapisan Depan Lipatan Tengah (Aksen Layer) -->
+  <path d="M0,0 L1200,0 L1200,20 
+           Q1050,120 900,20 
+           Q750,120 600,20 
+           Q450,120 300,20 
+           Q150,120 0,20 Z" 
+        fill="url(#topDrapeGrad2)" 
+        stroke="#300006" 
+        stroke-width="0.5"/>
+
+  <!-- Garis-Garis Lipatan Tekstur Kain (Ruby Highlight & Shadow) -->
+  <path d="M150,120 Q150,70 150,0 M450,120 Q450,70 450,0 M750,120 Q750,70 750,0 M1050,120 Q1050,70 1050,0" 
+        stroke="#240004" 
+        stroke-width="1.2"/>
+  <path d="M100,100 Q140,50 150,0 M400,100 Q440,50 450,0 M700,100 Q740,50 750,0 M1000,100 Q1040,50 1050,0" 
+        stroke="#9e1325" 
+        stroke-width="1"/>
+  <path d="M200,100 Q160,50 150,0 M500,100 Q460,50 450,0 M800,100 Q760,50 750,0 M1100,100 Q1060,50 1050,0" 
+        stroke="#9e1325" 
+        stroke-width="1"/>
+
+  <!-- Renda / Lis Emas di Bawah Lengkungan (Gold Trim Accent) -->
+  <path d="M0,30 Q150,150 300,30 Q450,150 600,30 Q750,150 900,30 Q1050,150 1200,30" 
+        fill="none" 
+        stroke="#d4af37" 
+        stroke-width="2.5"/>
+  <path d="M0,23 Q150,143 300,23 Q450,143 600,23 Q750,143 900,23 Q1050,143 1200,23" 
+        fill="none" 
+        stroke="#b89328" 
+        stroke-width="1"/>
+</svg>
   <!-- Tirai Sisi Kiri -->
   <svg class="curtain-ornament left" viewBox="0 0 160 800" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
