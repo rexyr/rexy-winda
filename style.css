@@ -572,7 +572,7 @@ body.no-scroll {
   width: clamp(100px, 15vw, 240px);
   pointer-events: none;
   z-index: 1;
-  opacity: 0.85;
+  /* opacity: 0.85; */
   filter: drop-shadow(0 10px 20px rgba(149, 22, 15, 0.08));
 }
 
@@ -588,7 +588,7 @@ body.no-scroll {
 /* Tampilan Mobile */
 @media (max-width: 768px) {
   .curtain-ornament {
-    opacity: 0.35;
+    /* opacity: 0.35; */
     width: 85px;
   }
 }
