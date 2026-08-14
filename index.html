@@ -79,6 +79,38 @@
   <line x1="45" y1="520" x2="47" y2="535" stroke="#b89328" stroke-width="1.2"/>
 </svg>
 
+      <svg class="curtain-ornament right" viewBox="0 0 160 800" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradien Maroon Luar -->
+    <linearGradient id="drapeGrad1R" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a000b" stop-opacity="0.98"/>
+      <stop offset="50%" stop-color="#700918" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#911424" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#3b0007" stop-opacity="0.4"/>
+    </linearGradient>
+    <!-- Gradien Maroon Dalam (Lipatan/Highlight) -->
+    <linearGradient id="drapeGrad2R" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5c000e" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#800c1c" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#a81c2e" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#2d0006" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <!-- Lapisan Kain Tirai -->
+  <path d="M0,0 L150,0 C125,220 50,380 40,460 C30,550 110,680 135,800 L0,800 Z" fill="url(#drapeGrad1R)" stroke="var(--l, #b32a3d)" stroke-width="0.75"/>
+  <path d="M0,0 L110,0 C90,200 35,370 28,460 C20,560 75,700 95,800 L0,800 Z" fill="url(#drapeGrad2R)" stroke="var(--r, #3b0007)" stroke-width="0.8" stroke-opacity="0.6"/>
+  <!-- Garis Lipatan Kain (Bayangan & Kilau) -->
+  <path d="M70,0 C60,180 20,380 15,460 C10,540 45,690 60,800" stroke="var(--r, #ff8fa3)" stroke-width="1.2" stroke-opacity="0.4"/>
+  <path d="M35,0 C30,170 12,380 8,460 C4,530 20,680 30,800" stroke="var(--r, #360006)" stroke-width="0.8" stroke-opacity="0.7" stroke-dasharray="4 3"/>
+  <!-- Tali & Tassel Pengikat (Aksen Emas Marun) -->
+  <path d="M0,440 Q35,455 42,460 Q35,468 0,480" fill="none" stroke="var(--r, #e6b87d)" stroke-width="2.5"/>
+  <ellipse cx="38" cy="460" rx="6" ry="10" fill="var(--c, #6b0512)" stroke="var(--r, #e6b87d)" stroke-width="1.8"/>
+  <path d="M38,470 C44,480 46,500 48,520 L30,520 C32,500 34,480 38,470 Z" fill="var(--r, #e6b87d)" opacity="0.95"/>
+  <line x1="33" y1="520" x2="31" y2="535" stroke="var(--r, #cda05e)" stroke-width="1"/>
+  <line x1="39" y1="520" x2="39" y2="538" stroke="var(--r, #cda05e)" stroke-width="1"/>
+  <line x1="45" y1="520" x2="47" y2="535" stroke="var(--r, #cda05e)" stroke-width="1"/>
+</svg>
+
   <div class="cover-content text-center">
     
     <!-- Top Element: Title, Cincin & Pita (Desktop: Kolom Tengah Atas) -->
