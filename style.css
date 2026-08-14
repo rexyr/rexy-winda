@@ -563,6 +563,17 @@ body.no-scroll {
   z-index: 2; /* Memastikan teks dan tombol berada di atas lapisan tirai */
 }
 
+.curtain-ornament.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Responsif: tinggi menyesuaikan antara 60px di HP hingga 130px di layar lebar */
+  height: clamp(60px, 12vh, 130px);
+  z-index: 25; /* Sedikit lebih tinggi dari tirai samping agar menutupi sambungan atas */
+  pointer-events: none;
+}
+
 /* Style Grafis Tirai */
 .curtain-ornament {
   position: absolute;
